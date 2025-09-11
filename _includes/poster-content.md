@@ -1,6 +1,6 @@
 <div style="text-align: center; margin-bottom: 2rem;">
-  <img src="assets/img/drl-logo.png" alt="Deep RL Logo" style="height: 80px; margin-right: 1rem;">
-  <img src="assets/img/riml-logo.png" alt="RI ML Logo" style="height: 80px; margin-left: 1rem;">
+  <img src="{{ '/assets/img/drl-logo.png' | relative_url }}" alt="Deep RL Logo" style="height: 80px; margin-right: 1rem;">
+  <img src="{{ '/assets/img/riml-logo.png' | relative_url }}" alt="RI ML Logo" style="height: 80px; margin-left: 1rem;">
 </div>
 
 **Table of Contents**
@@ -23,12 +23,12 @@ Decision making in reinforcement learning (RL) represents a fundamental challeng
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin: 2rem 0;">
   <div style="text-align: center;">
-    <img src="assets/img/iman.jpg" alt="Iman Ahmadi" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #2c3e50;">
+    <img src="{{ '/assets/img/iman.jpg' | relative_url }}" alt="Iman Ahmadi" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #2c3e50;">
     <p style="margin-top: 0.5rem; font-weight: bold;">Iman Ahmadi</p>
     <p style="margin: 0; font-size: 0.9em; color: #666;">iman1234ahmadi@gmail.com</p>
   </div>
   <div style="text-align: center;">
-    <img src="assets/img/amirreza.jpg" alt="Amirreza Tanevardi" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #2c3e50;">
+    <img src="{{ '/assets/img/amirreza.jpg' | relative_url }}" alt="Amirreza Tanevardi" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #2c3e50;">
     <p style="margin-top: 0.5rem; font-weight: bold;">Amirreza Tanevardi</p>
     <p style="margin: 0; font-size: 0.9em; color: #666;">amirreza.tanevardi@gmail.com</p>
   </div>
@@ -139,11 +139,11 @@ Our approach combines several key components:
 
 <div style="display: flex; justify-content: center; gap: 2rem; margin: 2rem 0;">
   <div style="text-align: center;">
-    <img src="assets/img/method.pdf" alt="Method Architecture" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+    <img src="{{ '/assets/img/method/method-1.png' | relative_url }}" alt="Method Architecture" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
     <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666;">Method Architecture</p>
   </div>
   <div style="text-align: center;">
-    <img src="assets/img/method_prev.pdf" alt="Method Preview" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+    <img src="{{ '/assets/img/method_prev/method_prev-1.png' | relative_url }}" alt="Method Preview" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
     <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666;">Method Preview</p>
   </div>
 </div>
@@ -152,11 +152,11 @@ Our approach combines several key components:
 
 <div style="display: flex; justify-content: center; gap: 2rem; margin: 2rem 0;">
   <div style="text-align: center;">
-    <img src="assets/img/key_att_onehead.pdf" alt="Key Attention One Head" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+    <img src="{{ '/assets/img/key_att_onehead/key_att_onehead-1.png' | relative_url }}" alt="Key Attention One Head" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
     <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666;">Key Attention (One Head)</p>
   </div>
   <div style="text-align: center;">
-    <img src="assets/img/key_rew_onehead.pdf" alt="Key Reward One Head" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+    <img src="{{ '/assets/img/key_rew_onehead/key_rew_onehead-1.png' | relative_url }}" alt="Key Reward One Head" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
     <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666;">Key Reward (One Head)</p>
   </div>
 </div>
@@ -201,22 +201,22 @@ Our decision making framework demonstrates significant improvements over baselin
 
 <div style="display: flex; justify-content: center; gap: 2rem; margin: 2rem 0; flex-wrap: wrap;">
   <div style="text-align: center; flex: 1; min-width: 300px;">
-    <img src="assets/img/graph.pdf" alt="Main Results Graph" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+    <img src="{{ '/assets/img/graph/graph-1.png' | relative_url }}" alt="Main Results Graph" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
     <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666;">Main Results Graph</p>
   </div>
   <div style="text-align: center; flex: 1; min-width: 300px;">
-    <img src="assets/img/graph_length.pdf" alt="Graph Length Analysis" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+    <img src="{{ '/assets/img/graph_length/graph_length-1.png' | relative_url }}" alt="Graph Length Analysis" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
     <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666;">Graph Length Analysis</p>
   </div>
 </div>
 
 <div style="display: flex; justify-content: center; gap: 2rem; margin: 2rem 0;">
   <div style="text-align: center;">
-    <img src="assets/img/graph_prev.pdf" alt="Graph Preview" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+    <img src="{{ '/assets/img/graph_prev/graph_prev-1.png' | relative_url }}" alt="Graph Preview" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
     <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666;">Graph Preview</p>
   </div>
   <div style="text-align: center;">
-    <img src="assets/img/results_summary.pdf" alt="Results Summary" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+    <img src="{{ '/assets/img/results_summary/results_summary-1.png' | relative_url }}" alt="Results Summary" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
     <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666;">Results Summary</p>
   </div>
 </div>
@@ -253,22 +253,22 @@ Our method was evaluated on several classic Atari games, demonstrating robust de
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0;">
   <div style="text-align: center;">
-    <img src="assets/img/Breakout_target_sample.pdf" alt="Breakout Target Sample" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+    <img src="{{ '/assets/img/Breakout_target_sample/Breakout_target_sample-1.png' | relative_url }}" alt="Breakout Target Sample" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
     <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666; font-weight: bold;">Breakout</p>
     <p style="margin: 0; font-size: 0.8em; color: #888;">Target Sample Visualization</p>
   </div>
   <div style="text-align: center;">
-    <img src="assets/img/Pong_target_sample.pdf" alt="Pong Target Sample" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+    <img src="{{ '/assets/img/Pong_target_sample/Pong_target_sample-1.png' | relative_url }}" alt="Pong Target Sample" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
     <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666; font-weight: bold;">Pong</p>
     <p style="margin: 0; font-size: 0.8em; color: #888;">Target Sample Visualization</p>
   </div>
   <div style="text-align: center;">
-    <img src="assets/img/Qbert_target_sample.pdf" alt="Qbert Target Sample" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+    <img src="{{ '/assets/img/Qbert_target_sample/Qbert_target_sample-1.png' | relative_url }}" alt="Qbert Target Sample" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
     <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666; font-weight: bold;">Q*bert</p>
     <p style="margin: 0; font-size: 0.8em; color: #888;">Target Sample Visualization</p>
   </div>
   <div style="text-align: center;">
-    <img src="assets/img/Seaquest_target_sample.pdf" alt="Seaquest Target Sample" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+    <img src="{{ '/assets/img/Seaquest_target_sample/Seaquest_target_sample-1.png' | relative_url }}" alt="Seaquest Target Sample" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
     <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666; font-weight: bold;">Seaquest</p>
     <p style="margin: 0; font-size: 0.8em; color: #888;">Target Sample Visualization</p>
   </div>
@@ -306,7 +306,7 @@ Each game presents unique decision-making challenges:
 ---
 
 <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); border-radius: 10px;">
-  <img src="assets/img/logo.png" alt="Project Logo" style="height: 60px; margin-bottom: 1rem;">
+  <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Project Logo" style="height: 60px; margin-bottom: 1rem;">
   <p style="margin: 0; font-size: 0.9em; color: #666;">
     <strong>Decision Making in Reinforcement Learning</strong><br>
     Robust frameworks for intelligent decision making under uncertainty
