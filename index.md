@@ -23,7 +23,7 @@ title: ""
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
 
 <!-- Preload the PNG to reduce the initial white flash -->
-<link rel="preload" as="image" href="{{ '/assets/img/PosterSession.png' | relative_url }}?v={{ site.github.build_revision | default: site.time | date: '%s' }}">
+<link rel="preload" as="image" href="{{ '/assets/img/Poster_session (1)/Poster_session (1)-1.png' | relative_url }}?v={{ site.github.build_revision | default: site.time | date: '%s' }}">
 
 <!-- Page-local CSS for the circular loader (safe to keep even if style.scss has similar rules) -->
 <style>
@@ -143,20 +143,20 @@ title: ""
           alt="Decision Making in RL — poster preview"
           loading="eager"
           decoding="async"
-          src="{{ '/assets/img/Poster_session.png' | relative_url }}?v={{ site.github.build_revision | default: site.time | date: '%s' }}"
+          src="{{ '/assets/img/Poster_session (1)/Poster_session (1)-1.png' | relative_url }}?v={{ site.github.build_revision | default: site.time | date: '%s' }}"
           style="max-width:100%; height:auto; border-radius:14px; border:1px solid var(--card-border); background:#fff; box-shadow:var(--shadow);">
 
         <!-- Nice-looking download button (image is not clickable) -->
         <div style="margin-top:.9rem;">
-          <a class="btn" href="{{ '/assets/img/Poster_session.pdf' | relative_url }}" download>Download the PDF</a>
+          <a class="btn" href="{{ '/assets/img/Poster_session (1).pdf' | relative_url }}" download>Download the PDF</a>
         </div>
       </div>
     </div>
 
     <noscript>
       <div class="note" style="margin-top:1rem">
-        JavaScript is disabled.         <a href="{{ '/assets/img/Poster_session.png' | relative_url }}">Open the PNG</a> or
-        <a href="{{ '/assets/img/Poster_session.pdf' | relative_url }}">download the PDF</a>.
+        JavaScript is disabled.         <a href="{{ '/assets/img/Poster_session (1)/Poster_session (1)-1.png' | relative_url }}">Open the PNG</a> or
+        <a href="{{ '/assets/img/Poster_session (1).pdf' | relative_url }}">download the PDF</a>.
       </div>
     </noscript>
   </section>
@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', function(){
         const spin = wait.querySelector('.spinner'); if (spin) spin.remove();
         wait.innerHTML =
           '<div class="loader-text" style="opacity:.9">Could not load image. ' +
-          '<a href="{{ "/assets/img/PosterSession.pdf" | relative_url }}">Download the PDF</a>.</div>';
+          '<a href="{{ "/assets/img/Poster_session (1).pdf" | relative_url }}">Download the PDF</a>.</div>';
       });
     });
   }
