@@ -1,5 +1,5 @@
-title: "Decision Making in Reinforcement Learning"
-description: "Poster companion: robust decision making frameworks for RL agents."
+title: "Decision Transformer: Reinforcement Learning via Sequence Modeling"
+description: "Poster companion: Exploring the Decision Transformer approach for reinforcement learning by modeling decisions as sequences."
 url: "https://iman1234ahmadi.github.io"
 baseurl: "/Decision-Transformer" # repo name for GitHub Pages project site
 
@@ -20,7 +20,7 @@ sass:
 # Socials (optional)
 author:
 name: "Iman Ahmadi & Amirreza Tanevardi"
-email: "iman1234ahmadi@gmail.com & amirreza.tanevardi@gmail.com"
+email: "iman1234ahmadi@gmail.com & amirrezatanevardi@gmail.com"
 
 
 # Markdown + syntax
