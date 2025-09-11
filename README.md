@@ -1,56 +1,6 @@
-# Decision Making in Reinforcement Learning
-
-A comprehensive poster presentation showcasing robust decision making frameworks for reinforcement learning agents.
+# Decision Transformer: Reinforcement Learning via Sequence Modeling
 
 ## 🚀 GitHub Pages Deployment
-
-### Step 1: Create GitHub Repository
-
-1. **Create a new repository on GitHub**
-   - Repository name: `Dicision-RL` (or your preferred name)
-   - Make it public
-   - Don't initialize with README (we already have one)
-
-2. **Upload your project**
-
-   **Option A: Using deployment scripts (Recommended)**
-   
-   **Windows:**
-   ```cmd
-   # First time setup
-   git remote add origin https://github.com/YOUR_USERNAME/Dicision-RL.git
-   
-   # Deploy (run this whenever you make changes)
-   deploy.bat
-   ```
-   
-   **Linux/Mac:**
-   ```bash
-   # First time setup
-   git remote add origin https://github.com/YOUR_USERNAME/Dicision-RL.git
-   
-   # Deploy (run this whenever you make changes)
-   chmod +x deploy.sh
-   ./deploy.sh
-   ```
-
-   **Option B: Manual Git commands**
-   ```bash
-   # Initialize git (if not already done)
-   git init
-   
-   # Add all files
-   git add .
-   
-   # Commit
-   git commit -m "Initial commit: Decision RL Poster"
-   
-   # Add remote origin (replace with your GitHub username)
-   git remote add origin https://github.com/YOUR_USERNAME/Dicision-RL.git
-   
-   # Push to GitHub
-   git push -u origin main
-   ```
 
 ### Step 2: Enable GitHub Pages
 
