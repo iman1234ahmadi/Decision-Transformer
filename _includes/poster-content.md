@@ -287,21 +287,44 @@ Each game presents unique decision-making challenges:
 
 ## ✦ References ✦ <a name="references"></a>
 
-- Sutton, Richard S., and Andrew G. Barto. *Reinforcement learning: An introduction*. MIT press, 2018.
+<div style="background: #f8f9fa; padding: 2rem; border-radius: 12px; border-left: 4px solid #2c3e50; margin: 2rem 0;">
 
-- Auer, Peter, et al. "Finite-time analysis of the multiarmed bandit problem." *Machine learning* 47.2-3 (2002): 235-256.
+<div style="display: grid; gap: 1.5rem; font-size: 0.95em; line-height: 1.6;">
 
-- Schaul, Tom, et al. "Prioritized experience replay." *arXiv preprint arXiv:1511.05952* (2015).
+<div style="padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<strong>[1]</strong> Sutton, Richard S., and Andrew G. Barto. <em>Reinforcement learning: An introduction</em>. MIT press, 2018.
+</div>
 
-- Haarnoja, Tuomas, et al. "Soft actor-critic: Off-policy maximum entropy deep reinforcement learning with a stochastic actor." *International conference on machine learning*. PMLR, 2018.
+<div style="padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<strong>[2]</strong> Auer, Peter, et al. "Finite-time analysis of the multiarmed bandit problem." <em>Machine learning</em> 47.2-3 (2002): 235-256.
+</div>
 
-- Mnih, Volodymyr, et al. "Human-level control through deep reinforcement learning." *Nature* 518.7540 (2015): 529-533.
+<div style="padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<strong>[3]</strong> Schaul, Tom, et al. "Prioritized experience replay." <em>arXiv preprint arXiv:1511.05952</em> (2015).
+</div>
 
-- Taylor, Matthew E., and Peter Stone. "Transfer learning for reinforcement learning domains: A survey." *Journal of Machine Learning Research* 10.Jul (2009): 1633-1685.
+<div style="padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<strong>[4]</strong> Haarnoja, Tuomas, et al. "Soft actor-critic: Off-policy maximum entropy deep reinforcement learning with a stochastic actor." <em>International conference on machine learning</em>. PMLR, 2018.
+</div>
 
-- Roijers, Diederik M., et al. "A survey of multi-objective sequential decision-making." *Journal of Artificial Intelligence Research* 48 (2013): 67-113.
+<div style="padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<strong>[5]</strong> Mnih, Volodymyr, et al. "Human-level control through deep reinforcement learning." <em>Nature</em> 518.7540 (2015): 529-533.
+</div>
 
-- Bellemare, Marc G., et al. "The arcade learning environment: An evaluation platform for general agents." *Journal of Artificial Intelligence Research* 47 (2013): 253-279.
+<div style="padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<strong>[6]</strong> Taylor, Matthew E., and Peter Stone. "Transfer learning for reinforcement learning domains: A survey." <em>Journal of Machine Learning Research</em> 10.Jul (2009): 1633-1685.
+</div>
+
+<div style="padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<strong>[7]</strong> Roijers, Diederik M., et al. "A survey of multi-objective sequential decision-making." <em>Journal of Artificial Intelligence Research</em> 48 (2013): 67-113.
+</div>
+
+<div style="padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<strong>[8]</strong> Bellemare, Marc G., et al. "The arcade learning environment: An evaluation platform for general agents." <em>Journal of Artificial Intelligence Research</em> 47 (2013): 253-279.
+</div>
+
+</div>
+</div>
 
 ---
 
