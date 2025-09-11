@@ -251,71 +251,71 @@ Strong performance on continuous control tasks across different data regimes:
 <div style="display: grid; gap: 1.5rem; font-size: 0.95em; line-height: 1.6;">
 
 <div style="padding: 1rem; background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid #4a5568; color: #e2e8f0;">
-<strong style="color: #3b82f6;">[12]</strong> Rupesh Kumar Srivastava, Pranav Shyam, Filipe Mutz, Wojciech Jaskowski, and Jürgen Schmidhuber. "Training agents using upside-down reinforcement learning." <em style="color: #a0aec0;">arXiv preprint arXiv:1912.02877</em>, 2019.
+<strong style="color: #3b82f6;">[1]</strong> Rupesh Kumar Srivastava, Pranav Shyam, Filipe Mutz, Wojciech Jaskowski, and Jürgen Schmidhuber. "Training agents using upside-down reinforcement learning." <em style="color: #a0aec0;">arXiv preprint arXiv:1912.02877</em>, 2019.
 </div>
 
 <div style="padding: 1rem; background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid #4a5568; color: #e2e8f0;">
-<strong style="color: #3b82f6;">[13]</strong> Aviral Kumar, Xue Bin Peng, and Sergey Levine. "Reward-conditioned policies." <em style="color: #a0aec0;">arXiv preprint arXiv:1912.13465</em>, 2019.
+<strong style="color: #3b82f6;">[2]</strong> Aviral Kumar, Xue Bin Peng, and Sergey Levine. "Reward-conditioned policies." <em style="color: #a0aec0;">arXiv preprint arXiv:1912.13465</em>, 2019.
 </div>
 
 <div style="padding: 1rem; background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid #4a5568; color: #e2e8f0;">
-<strong style="color: #3b82f6;">[14]</strong> Dibya Ghosh, Abhishek Gupta, Justin Fu, Ashwin Reddy, Coline Devin, Benjamin Eysenbach, and Sergey Levine. "Learning to reach goals without reinforcement learning." <em style="color: #a0aec0;">arXiv preprint arXiv:1912.06088</em>, 2019.
+<strong style="color: #3b82f6;">[3]</strong> Dibya Ghosh, Abhishek Gupta, Justin Fu, Ashwin Reddy, Coline Devin, Benjamin Eysenbach, and Sergey Levine. "Learning to reach goals without reinforcement learning." <em style="color: #a0aec0;">arXiv preprint arXiv:1912.06088</em>, 2019.
 </div>
 
 <div style="padding: 1rem; background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid #4a5568; color: #e2e8f0;">
-<strong style="color: #3b82f6;">[15]</strong> Keiran Paster, Sheila A McIlraith, and Jimmy Ba. "Planning from pixels using inverse dynamics models." <em style="color: #a0aec0;">arXiv preprint arXiv:2012.02419</em>, 2020.
+<strong style="color: #3b82f6;">[4]</strong> Keiran Paster, Sheila A McIlraith, and Jimmy Ba. "Planning from pixels using inverse dynamics models." <em style="color: #a0aec0;">arXiv preprint arXiv:2012.02419</em>, 2020.
 </div>
 
 <div style="padding: 1rem; background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid #4a5568; color: #e2e8f0;">
-<strong style="color: #3b82f6;">[16]</strong> Johan Ferret, Raphaël Marinier, Matthieu Geist, and Olivier Pietquin. "Self-attentional credit assignment for transfer in reinforcement learning." <em style="color: #a0aec0;">arXiv preprint arXiv:1907.08027</em>, 2019.
+<strong style="color: #3b82f6;">[5]</strong> Johan Ferret, Raphaël Marinier, Matthieu Geist, and Olivier Pietquin. "Self-attentional credit assignment for transfer in reinforcement learning." <em style="color: #a0aec0;">arXiv preprint arXiv:1907.08027</em>, 2019.
 </div>
 
 <div style="padding: 1rem; background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid #4a5568; color: #e2e8f0;">
-<strong style="color: #3b82f6;">[17]</strong> Anna Harutyunyan, Will Dabney, Thomas Mesnard, Mohammad Azar, Bilal Piot, Nicolas Heess, Hado van Hasselt, Greg Wayne, Satinder Singh, Doina Precup, et al. "Hindsight credit assignment." <em style="color: #a0aec0;">arXiv preprint arXiv:1912.02503</em>, 2019.
+<strong style="color: #3b82f6;">[6]</strong> Anna Harutyunyan, Will Dabney, Thomas Mesnard, Mohammad Azar, Bilal Piot, Nicolas Heess, Hado van Hasselt, Greg Wayne, Satinder Singh, Doina Precup, et al. "Hindsight credit assignment." <em style="color: #a0aec0;">arXiv preprint arXiv:1912.02503</em>, 2019.
 </div>
 
 <div style="padding: 1rem; background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid #4a5568; color: #e2e8f0;">
-<strong style="color: #3b82f6;">[18]</strong> Jose A Arjona-Medina, Michael Gillhofer, Michael Widrich, Thomas Unterthiner, Johannes Brandstetter, and Sepp Hochreiter. "Rudder: Return decomposition for delayed rewards." <em style="color: #a0aec0;">arXiv preprint arXiv:1806.07857</em>, 2018.
+<strong style="color: #3b82f6;">[7]</strong> Jose A Arjona-Medina, Michael Gillhofer, Michael Widrich, Thomas Unterthiner, Johannes Brandstetter, and Sepp Hochreiter. "Rudder: Return decomposition for delayed rewards." <em style="color: #a0aec0;">arXiv preprint arXiv:1806.07857</em>, 2018.
 </div>
 
 <div style="padding: 1rem; background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid #4a5568; color: #e2e8f0;">
-<strong style="color: #3b82f6;">[19]</strong> Chia-Chun Hung, Timothy Lillicrap, Josh Abramson, Yan Wu, Mehdi Mirza, Federico Carnevale, Arun Ahuja, and Greg Wayne. "Optimizing agent behavior over long time scales by transporting value." <em style="color: #a0aec0;">Nature communications</em> 10(1):1–12, 2019.
+<strong style="color: #3b82f6;">[8]</strong> Chia-Chun Hung, Timothy Lillicrap, Josh Abramson, Yan Wu, Mehdi Mirza, Federico Carnevale, Arun Ahuja, and Greg Wayne. "Optimizing agent behavior over long time scales by transporting value." <em style="color: #a0aec0;">Nature communications</em> 10(1):1–12, 2019.
 </div>
 
 <div style="padding: 1rem; background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid #4a5568; color: #e2e8f0;">
-<strong style="color: #3b82f6;">[20]</strong> Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Lukasz Kaiser, and Illia Polosukhin. "Attention is all you need." <em style="color: #a0aec0;">Advances in Neural Information Processing Systems</em>, 2017.
+<strong style="color: #3b82f6;">[9]</strong> Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Lukasz Kaiser, and Illia Polosukhin. "Attention is all you need." <em style="color: #a0aec0;">Advances in Neural Information Processing Systems</em>, 2017.
 </div>
 
 <div style="padding: 1rem; background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid #4a5568; color: #e2e8f0;">
-<strong style="color: #3b82f6;">[21]</strong> Alec Radford, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. "Improving language understanding by generative pre-training." 2018.
+<strong style="color: #3b82f6;">[10]</strong> Alec Radford, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. "Improving language understanding by generative pre-training." 2018.
 </div>
 
 <div style="padding: 1rem; background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid #4a5568; color: #e2e8f0;">
-<strong style="color: #3b82f6;">[22]</strong> Aviral Kumar, Aurick Zhou, George Tucker, and Sergey Levine. "Conservative q-learning for offline reinforcement learning." <em style="color: #a0aec0;">Advances in Neural Information Processing Systems</em>, 2020.
+<strong style="color: #3b82f6;">[11]</strong> Aviral Kumar, Aurick Zhou, George Tucker, and Sergey Levine. "Conservative q-learning for offline reinforcement learning." <em style="color: #a0aec0;">Advances in Neural Information Processing Systems</em>, 2020.
 </div>
 
 <div style="padding: 1rem; background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid #4a5568; color: #e2e8f0;">
-<strong style="color: #3b82f6;">[23]</strong> Rishabh Agarwal, Dale Schuurmans, and Mohammad Norouzi. "An optimistic perspective on offline reinforcement learning." <em style="color: #a0aec0;">International Conference on Machine Learning</em>, 2020.
+<strong style="color: #3b82f6;">[12]</strong> Rishabh Agarwal, Dale Schuurmans, and Mohammad Norouzi. "An optimistic perspective on offline reinforcement learning." <em style="color: #a0aec0;">International Conference on Machine Learning</em>, 2020.
 </div>
 
 <div style="padding: 1rem; background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid #4a5568; color: #e2e8f0;">
-<strong style="color: #3b82f6;">[24]</strong> Will Dabney, Mark Rowland, Marc Bellemare, and Rémi Munos. "Distributional reinforcement learning with quantile regression." <em style="color: #a0aec0;">Conference on Artificial Intelligence</em>, 2018.
+<strong style="color: #3b82f6;">[13]</strong> Will Dabney, Mark Rowland, Marc Bellemare, and Rémi Munos. "Distributional reinforcement learning with quantile regression." <em style="color: #a0aec0;">Conference on Artificial Intelligence</em>, 2018.
 </div>
 
 <div style="padding: 1rem; background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid #4a5568; color: #e2e8f0;">
-<strong style="color: #3b82f6;">[25]</strong> Aviral Kumar, Justin Fu, George Tucker, and Sergey Levine. "Stabilizing off-policy q-learning via bootstrapping error reduction." <em style="color: #a0aec0;">arXiv preprint arXiv:1906.00949</em>, 2019.
+<strong style="color: #3b82f6;">[14]</strong> Aviral Kumar, Justin Fu, George Tucker, and Sergey Levine. "Stabilizing off-policy q-learning via bootstrapping error reduction." <em style="color: #a0aec0;">arXiv preprint arXiv:1906.00949</em>, 2019.
 </div>
 
 <div style="padding: 1rem; background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid #4a5568; color: #e2e8f0;">
-<strong style="color: #3b82f6;">[26]</strong> Yifan Wu, George Tucker, and Ofir Nachum. "Behavior regularized offline reinforcement learning." <em style="color: #a0aec0;">arXiv preprint arXiv:1911.11361</em>, 2019.
+<strong style="color: #3b82f6;">[15]</strong> Yifan Wu, George Tucker, and Ofir Nachum. "Behavior regularized offline reinforcement learning." <em style="color: #a0aec0;">arXiv preprint arXiv:1911.11361</em>, 2019.
 </div>
 
 <div style="padding: 1rem; background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid #4a5568; color: #e2e8f0;">
-<strong style="color: #3b82f6;">[27]</strong> Thomas Mesnard, Théophane Weber, Fabio Viola, Shantanu Thakoor, Alaa Saade, Anna Harutyunyan, Will Dabney, Tom Stepleton, Nicolas Heess, Arthur Guez, et al. "Counterfactual credit assignment in model-free reinforcement learning." <em style="color: #a0aec0;">arXiv preprint arXiv:2011.09464</em>, 2020.
+<strong style="color: #3b82f6;">[16]</strong> Thomas Mesnard, Théophane Weber, Fabio Viola, Shantanu Thakoor, Alaa Saade, Anna Harutyunyan, Will Dabney, Tom Stepleton, Nicolas Heess, Arthur Guez, et al. "Counterfactual credit assignment in model-free reinforcement learning." <em style="color: #a0aec0;">arXiv preprint arXiv:2011.09464</em>, 2020.
 </div>
 
 <div style="padding: 1rem; background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid #4a5568; color: #e2e8f0;">
-<strong style="color: #3b82f6;">[28]</strong> Chen, L., Lu, K., Rajeswaran, A., Lee, K., Grover, A., Laskin, M., Abbeel, P., Srinivas, A., & Mordatch, I. "Decision Transformer: Reinforcement Learning via Sequence Modeling." <em style="color: #a0aec0;">ArXiv, abs/2106.01345</em>, 2021.
+<strong style="color: #3b82f6;">[17]</strong> Chen, L., Lu, K., Rajeswaran, A., Lee, K., Grover, A., Laskin, M., Abbeel, P., Srinivas, A., & Mordatch, I. "Decision Transformer: Reinforcement Learning via Sequence Modeling." <em style="color: #a0aec0;">ArXiv, abs/2106.01345</em>, 2021.
 </div>
 
 </div>
