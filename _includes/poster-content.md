@@ -6,10 +6,9 @@
 **Table of Contents**
 - [Abstract](#abstract)
 - [Introduction](#introduction)
-- [Decision Making Frameworks](#frameworks)
+- [Decision Transformer](#frameworks)
 - [Methodology](#methodology)
 - [Results](#results)
-- [Key-to-Door Task](#key-to-door)
 - [Limitations](#limitations)
 - [References](#references)
 
@@ -79,7 +78,7 @@ $$
 
 ---
 
-## ✦ Decision Making Frameworks ✦ <a name="frameworks"></a>
+## ✦ Decision Transformer ✦ <a name="frameworks"></a>
 
 ### Sequence Modeling Approach
 
@@ -174,26 +173,6 @@ where $\hat{a}_t$ is the predicted action and $\ell$ is the appropriate loss fun
   </div>
 </div>
 
-### Experimental Setup
-
-**Environments**:
-- Classic RL benchmarks (CartPole, MountainCar, Atari games)
-- Multi-objective environments (Deep Sea Treasure, MO-Maze)
-- Real-world applications (robotic navigation, resource allocation)
-
-**Evaluation Metrics**:
-- Cumulative reward and sample efficiency
-- Pareto frontier quality for multi-objective problems
-- Transfer performance across domains
-- Robustness to environmental changes
-
-### Implementation Details
-
-The algorithm maintains:
-- **Value function estimates**: $Q(s,a)$ for state-action values
-- **Uncertainty estimates**: $\sigma(s,a)$ for exploration guidance
-- **Objective weights**: $w_i$ for multi-criteria balancing
-- **Transfer mappings**: $\phi$ for knowledge transfer
 
 ---
 
@@ -268,17 +247,6 @@ Performance sensitivity to context window size on Atari tasks:
 | K = 10 | 156.7 ± 34.2 | 67.4 ± 15.6 | 1,123.4 ± 234.5 |
 | K = 30 | **267.5 ± 97.5** | **106.1 ± 8.1** | **1,847.3 ± 234.1** |
 | K = 50 | 245.8 ± 89.3 | 98.7 ± 12.4 | 1,789.2 ± 198.7 |
-
----
-
-## ✦ Key-to-Door Task ✦ <a name="key-to-door"></a>
-
-### Specialized Environment Testing
-
-Specialized environment testing long-term credit assignment:
-- **Objective**: Pick up key early, navigate to door later
-- **Challenge**: Sparse rewards with long time delays
-- **Decision Transformer Advantage**: Handles delayed rewards through sequence modeling
 
 ---
 
