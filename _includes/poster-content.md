@@ -208,35 +208,7 @@ Strong performance on continuous control tasks across different data regimes:
   </div>
 </div>
 
-### Attention Mechanisms
 
-<div style="display: flex; justify-content: center; gap: 2rem; margin: 2rem 0;">
-  <div style="text-align: center;">
-    <img src="{{ '/assets/img/key_att_onehead/key_att_onehead-1.png' | relative_url }}" alt="Transformer Attention Weights" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
-    <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666; font-weight: bold;">Left: Transformer attention weights from all timesteps superimposed for a particular successful episode. The model attends to steps near pivotal events in the episode, such as picking up the key and reaching the door.</p>
-  </div>
-  <div style="text-align: center;">
-    <img src="{{ '/assets/img/key_rew_onehead/key_rew_onehead-1.png' | relative_url }}" alt="Running Return Probabilities" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
-    <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666; font-weight: bold;">Right: Averages of running return probabilities predicted by the transformer model for three types of episode outcomes.</p>
-  </div>
-</div>
-
-### Return Conditioning and Generalization
-
-**Return Tracking**: Decision Transformer closely tracks the desired return-to-go in its actual performance:
-- **Target Return**: 1000 → **Actual Return**: 987.3 ± 23.4
-- **Target Return**: 1500 → **Actual Return**: 1,456.7 ± 45.2
-- **Target Return**: 2000 → **Actual Return**: 1,923.1 ± 67.8
-
-**Extrapolation Capability**: Can generate trajectories achieving returns higher than seen in training data.
-
-### Long-term Dependencies and Sparse Rewards
-
-**Key-to-Door Task**: Tests long-term credit assignment requiring early key pickup and later door navigation:
-- **Decision Transformer**: 89.3% success rate
-- **%BC (Top 1%)**: 76.7% success rate  
-- **CQL**: 23.4% success rate
-- **TD-based methods**: Struggle with delayed rewards
 
 
 ---
@@ -250,7 +222,7 @@ Strong performance on continuous control tasks across different data regimes:
 <div style="padding: 1rem; background: linear-gradient(135deg, #3d2a2a 0%, #4a3a3a 100%); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid #4a3a3a; color: #e2e8f0;">
 <strong style="color: #e53e3e;">Dependency on Context Length</strong><br>
 <span style="color: #a0aec0;">Performance heavily depends on the context window size. Short contexts (K=1) lead to significant performance degradation, while longer contexts increase computational requirements and may not always improve results.</span>
-</div>
+  </div>
 
 <div style="padding: 1rem; background: linear-gradient(135deg, #3d2a2a 0%, #4a3a3a 100%); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid #4a3a3a; color: #e2e8f0;">
 <strong style="color: #e53e3e;">Computational Time</strong><br>
