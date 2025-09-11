@@ -160,18 +160,6 @@ where $\hat{a}_t$ is the predicted action and $\ell$ is the appropriate loss fun
   </div>
 </div>
 
-### Attention Mechanisms
-
-<div style="display: flex; justify-content: center; gap: 2rem; margin: 2rem 0;">
-  <div style="text-align: center;">
-    <img src="{{ '/assets/img/key_att_onehead/key_att_onehead-1.png' | relative_url }}" alt="Transformer Attention Weights" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
-    <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666; font-weight: bold;">Left: Transformer attention weights from all timesteps superimposed for a particular successful episode. The model attends to steps near pivotal events in the episode, such as picking up the key and reaching the door.</p>
-  </div>
-  <div style="text-align: center;">
-    <img src="{{ '/assets/img/key_rew_onehead/key_rew_onehead-1.png' | relative_url }}" alt="Running Return Probabilities" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
-    <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666; font-weight: bold;">Right: Averages of running return probabilities predicted by the transformer model for three types of episode outcomes.</p>
-  </div>
-</div>
 
 
 ---
@@ -217,6 +205,19 @@ Strong performance on continuous control tasks across different data regimes:
   <div style="text-align: center;">
     <img src="{{ '/assets/img/results_summary/results_summary-1.png' | relative_url }}" alt="Decision Transformer Performance Comparison" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
     <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666; font-weight: bold;">Results comparing Decision Transformer (ours) to TD learning (CQL) and behavior cloning across Atari, OpenAI Gym, and Minigrid. On a diverse set of tasks, Decision Transformer performs comparably or better than traditional approaches. Performance is measured by normalized episode return (see text for details).</p>
+  </div>
+</div>
+
+### Attention Mechanisms
+
+<div style="display: flex; justify-content: center; gap: 2rem; margin: 2rem 0;">
+  <div style="text-align: center;">
+    <img src="{{ '/assets/img/key_att_onehead/key_att_onehead-1.png' | relative_url }}" alt="Transformer Attention Weights" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+    <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666; font-weight: bold;">Left: Transformer attention weights from all timesteps superimposed for a particular successful episode. The model attends to steps near pivotal events in the episode, such as picking up the key and reaching the door.</p>
+  </div>
+  <div style="text-align: center;">
+    <img src="{{ '/assets/img/key_rew_onehead/key_rew_onehead-1.png' | relative_url }}" alt="Running Return Probabilities" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+    <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666; font-weight: bold;">Right: Averages of running return probabilities predicted by the transformer model for three types of episode outcomes.</p>
   </div>
 </div>
 
