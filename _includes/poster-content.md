@@ -237,16 +237,6 @@ Strong performance on continuous control tasks across different data regimes:
 - **CQL**: 23.4% success rate
 - **TD-based methods**: Struggle with delayed rewards
 
-### Context Length Ablation
-
-Performance sensitivity to context window size on Atari tasks:
-
-| Context Length (K) | Breakout Score | Pong Score | Q*bert Score |
-|-------------------|----------------|------------|--------------|
-| K = 1 | 45.2 ± 12.3 | 23.7 ± 8.9 | 234.1 ± 67.8 |
-| K = 10 | 156.7 ± 34.2 | 67.4 ± 15.6 | 1,123.4 ± 234.5 |
-| K = 30 | **267.5 ± 97.5** | **106.1 ± 8.1** | **1,847.3 ± 234.1** |
-| K = 50 | 245.8 ± 89.3 | 98.7 ± 12.4 | 1,789.2 ± 198.7 |
 
 ---
 
