@@ -1,0 +1,68 @@
+--- Abstract ---
+
+We introduce a framework that abstracts Reinforcement Learning (RL) as a sequence modeling problem. This allows us to draw upon the simplicity and scalability of the Transformer architecture, and associated advances in language modeling such as GPT-x and BERT. In particular, we present Decision Transformer, an architecture that casts the problem of RL as conditional sequence modeling. Unlike prior approaches to RL that fit value functions or compute policy gradients, Decision Transformer simply outputs the optimal actions by leveraging a causally masked Transformer. By conditioning an autoregressive model on the desired return (reward), past states, and actions, our Decision Transformer model can generate future actions that achieve the desired return. Despite its simplicity, Decision Transformer matches or exceeds the performance of state-of-the-art model-free offline RL baselines on Atari, OpenAI Gym, and Key-to-Door tasks.  
+--- End of Abstract ---
+
+--- Methodology Summary ---
+
+(From information in paper, paraphrased)
+
+Framing RL as Sequence Modeling:
+- The paper proposes viewing RL trajectories (sequences of states, actions, rewards) as sequences suitable for sequence modeling, rather than relying on value functions or policy gradient methods.  
+- It works in the *offline RL* setting, using pre-collected datasets of trajectories.  
+
+Data Representation:
+- Trajectories are represented with past states, past actions, and a “return-to-go” (sum of future rewards from current timestep).  
+- The return-to-go is used as a conditioning signal.  
+- Time or timestep information is inserted (e.g. via positional embeddings).  
+
+Model Architecture:
+- Uses a causally masked (autoregressive) Transformer.  
+- Embeds each component (state, action, return-to-go) into appropriate embedding spaces. For high-dimensional observations like pixels, uses e.g. convolutional encoders.  
+- The Transformer attends over a context window of past timesteps (states, actions, returns).  
+
+Training Objective:
+- The model is trained to predict the next action, given as input: the return-to-go, previous states, previous actions, and positional/time information.  
+- Loss is supervised, typically mean squared error (for continuous actions), or appropriate classification/discrete action loss (in discrete settings).  
+
+Inference:
+- To use the trained model, one supplies a desired return (target), plus observed past sequence (states, actions). The model produces next action, and after executing it, returns‐to-go is updated (subtracting obtained reward), and the sequence is extended.  
+
+Ablations & Hyperparameters:
+- They explore effect of context length (how many past timesteps to include) on performance.  
+- They compare Behavior Cloning (BC) baselines, also introduce Percentile Behavior Cloning (%BC), which trains only on top X% of trajectories.  
+- They look at settings with sparse or delayed rewards to test robustness.  
+
+--- End of Methodology Summary ---
+
+--- Results Summary ---
+
+(Paraphrased and cleaned from public tables)
+
+Atari (Discrete Tasks, using 1% of DQN-replay buffer):
+- Decision Transformer (DT) is competitive or superior to strong baselines like CQL, REM, QR-DQN, BC on several Atari games (Breakout, Pong, etc.) with small datasets. :contentReference[oaicite:0]{index=0}  
+- Example: Breakout: DT ≈ 267.5 ± 97.5 vs CQL ~211.1; Pong: DT ~106.1 ± 8.1 vs CQL ~111.9 in some conditions. :contentReference[oaicite:1]{index=1}  
+
+Continuous Control / D4RL Benchmark Tasks:
+- Environments include HalfCheetah, Hopper, Walker, Reacher, under data regimes like “Medium”, “Medium-Expert”, “Medium-Replay”. :contentReference[oaicite:2]{index=2}  
+- DT often achieves highest or near highest scores. For instance:  
+    • Medium-Expert HalfCheetah: DT ~86.8 ± 1.3 vs CQL ~62.4 :contentReference[oaicite:3]{index=3}  
+    • Medium-Expert Walker, Reacher also strong. :contentReference[oaicite:4]{index=4}  
+- On tasks with less or lower quality data (Medium, Medium-Replay), performance is still good, though sometimes other methods are close or slightly better in some cases. :contentReference[oaicite:5]{index=5}  
+
+Behavior Cloning & %BC Comparisons:
+- %BC = Behavior Cloning on top X% of trajectories. DT is often competitive with or better than %BC, especially when data is plentiful. :contentReference[oaicite:6]{index=6}  
+- In low-data Atari settings, DT outperforms %BC more clearly. :contentReference[oaicite:7]{index=7}  
+
+Return Conditioning & Generalization:
+- Observation: DT tracks the desired “return-to-go” in its actual performance fairly closely. If asked for a certain return, resulting policy tends to produce returns aligned with target. :contentReference[oaicite:8]{index=8}  
+- Sometimes DT can extrapolate: given a target return above anything in dataset, DT can generate trajectories achieving higher returns than seen. :contentReference[oaicite:9]{index=9}  
+
+Long-term / Sparse Rewards & Credit Assignment:
+- On “Key-to-Door” environment which requires picking up a key early, then navigating to a door much later: DT and %BC can succeed well using context over full episode; TD-based methods like CQL struggle. :contentReference[oaicite:10]{index=10}  
+- In settings with delayed or sparse rewards (e.g. reward only at end), DT is robust: delayed reward does not severely degrade performance, unlike some TD methods. :contentReference[oaicite:11]{index=11}  
+
+Ablation on Context Length:
+- Short context (e.g. K = 1) drastically reduces performance in Atari tasks relative to using longer context windows (K = 30 or 50) showing that information from past is useful. :contentReference[oaicite:12]{index=12}  
+
+--- End of Results Summary ---
