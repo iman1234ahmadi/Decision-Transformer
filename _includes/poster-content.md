@@ -9,7 +9,7 @@
 - [Decision Making Frameworks](#frameworks)
 - [Methodology](#methodology)
 - [Results](#results)
-- [Game Environment Samples](#game-samples)
+- [Key-to-Door Task](#key-to-door)
 - [Limitations](#limitations)
 - [References](#references)
 
@@ -156,12 +156,8 @@ where $\hat{a}_t$ is the predicted action and $\ell$ is the appropriate loss fun
 
 <div style="display: flex; justify-content: center; gap: 2rem; margin: 2rem 0;">
   <div style="text-align: center;">
-    <img src="{{ '/assets/img/method/method-1.png' | relative_url }}" alt="Method Architecture" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
-    <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666;">Method Architecture</p>
-  </div>
-  <div style="text-align: center;">
-    <img src="{{ '/assets/img/method_prev/method_prev-1.png' | relative_url }}" alt="Method Preview" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
-    <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666;">Method Preview</p>
+    <img src="{{ '/assets/img/method/method-1.png' | relative_url }}" alt="Decision Transformer Architecture" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+    <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666; font-weight: bold;">Decision Transformer architecture. States, actions, and returns are fed into modality-specific linear embeddings and a positional episodic timestep encoding is added. Tokens are fed into a GPT architecture which predicts actions autoregressively using a causal self-attention mask.</p>
   </div>
 </div>
 
@@ -169,12 +165,12 @@ where $\hat{a}_t$ is the predicted action and $\ell$ is the appropriate loss fun
 
 <div style="display: flex; justify-content: center; gap: 2rem; margin: 2rem 0;">
   <div style="text-align: center;">
-    <img src="{{ '/assets/img/key_att_onehead/key_att_onehead-1.png' | relative_url }}" alt="Key Attention One Head" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
-    <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666;">Key Attention (One Head)</p>
+    <img src="{{ '/assets/img/key_att_onehead/key_att_onehead-1.png' | relative_url }}" alt="Transformer Attention Weights" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+    <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666; font-weight: bold;">Left: Transformer attention weights from all timesteps superimposed for a particular successful episode. The model attends to steps near pivotal events in the episode, such as picking up the key and reaching the door.</p>
   </div>
   <div style="text-align: center;">
-    <img src="{{ '/assets/img/key_rew_onehead/key_rew_onehead-1.png' | relative_url }}" alt="Key Reward One Head" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
-    <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666;">Key Reward (One Head)</p>
+    <img src="{{ '/assets/img/key_rew_onehead/key_rew_onehead-1.png' | relative_url }}" alt="Running Return Probabilities" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+    <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666; font-weight: bold;">Right: Averages of running return probabilities predicted by the transformer model for three types of episode outcomes.</p>
   </div>
 </div>
 
@@ -229,23 +225,19 @@ Strong performance on continuous control tasks across different data regimes:
 
 <div style="display: flex; justify-content: center; gap: 2rem; margin: 2rem 0; flex-wrap: wrap;">
   <div style="text-align: center; flex: 1; min-width: 300px;">
-    <img src="{{ '/assets/img/graph/graph-1.png' | relative_url }}" alt="Main Results Graph" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
-    <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666;">Main Results Graph</p>
+    <img src="{{ '/assets/img/graph/graph-1.png' | relative_url }}" alt="Decision Transformer Shortest Path Example" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+    <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666; font-weight: bold;">Figure : Illustrative example of finding shortest path for a fixed graph (left) posed as reinforcement learning. Training dataset consists of random walk trajectories and their per-node returns-to-go (middle). Conditioned on a starting state and generating largest possible return at each node, Decision Transformer sequences optimal paths.</p>
   </div>
   <div style="text-align: center; flex: 1; min-width: 300px;">
-    <img src="{{ '/assets/img/graph_length/graph_length-1.png' | relative_url }}" alt="Graph Length Analysis" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
-    <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666;">Graph Length Analysis</p>
+    <img src="{{ '/assets/img/graph_length/graph_length-1.png' | relative_url }}" alt="Histogram of Steps to Reach Goal Node" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+    <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666; font-weight: bold;">Histogram of steps to reach the goal node for random walks on the graph, shortest possible paths to the goal, and attempted shortest paths generated by the transformer model. ∞ indicates the goal was not reached during the trajectory</p>
   </div>
 </div>
 
 <div style="display: flex; justify-content: center; gap: 2rem; margin: 2rem 0;">
   <div style="text-align: center;">
-    <img src="{{ '/assets/img/graph_prev/graph_prev-1.png' | relative_url }}" alt="Graph Preview" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
-    <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666;">Graph Preview</p>
-  </div>
-  <div style="text-align: center;">
-    <img src="{{ '/assets/img/results_summary/results_summary-1.png' | relative_url }}" alt="Results Summary" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
-    <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666;">Results Summary</p>
+    <img src="{{ '/assets/img/results_summary/results_summary-1.png' | relative_url }}" alt="Decision Transformer Performance Comparison" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+    <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666; font-weight: bold;">Results comparing Decision Transformer (ours) to TD learning (CQL) and behavior cloning across Atari, OpenAI Gym, and Minigrid. On a diverse set of tasks, Decision Transformer performs comparably or better than traditional approaches. Performance is measured by normalized episode return (see text for details).</p>
   </div>
 </div>
 
@@ -279,45 +271,9 @@ Performance sensitivity to context window size on Atari tasks:
 
 ---
 
-## ✦ Game Environment Samples ✦ <a name="game-samples"></a>
+## ✦ Key-to-Door Task ✦ <a name="key-to-door"></a>
 
-### Atari Game Environments
-
-Decision Transformer was evaluated on classic Atari games using only 1% of the DQN replay buffer, demonstrating effective sequence modeling for discrete action spaces:
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0;">
-  <div style="text-align: center;">
-    <img src="{{ '/assets/img/Breakout_target_sample/Breakout_target_sample-1.png' | relative_url }}" alt="Breakout Target Sample" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
-    <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666; font-weight: bold;">Breakout</p>
-    <p style="margin: 0; font-size: 0.8em; color: #888;">Target Sample Visualization</p>
-  </div>
-  <div style="text-align: center;">
-    <img src="{{ '/assets/img/Pong_target_sample/Pong_target_sample-1.png' | relative_url }}" alt="Pong Target Sample" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
-    <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666; font-weight: bold;">Pong</p>
-    <p style="margin: 0; font-size: 0.8em; color: #888;">Target Sample Visualization</p>
-  </div>
-  <div style="text-align: center;">
-    <img src="{{ '/assets/img/Qbert_target_sample/Qbert_target_sample-1.png' | relative_url }}" alt="Qbert Target Sample" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
-    <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666; font-weight: bold;">Q*bert</p>
-    <p style="margin: 0; font-size: 0.8em; color: #888;">Target Sample Visualization</p>
-  </div>
-  <div style="text-align: center;">
-    <img src="{{ '/assets/img/Seaquest_target_sample/Seaquest_target_sample-1.png' | relative_url }}" alt="Seaquest Target Sample" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
-    <p style="margin-top: 0.5rem; font-size: 0.9em; color: #666; font-weight: bold;">Seaquest</p>
-    <p style="margin: 0; font-size: 0.8em; color: #888;">Target Sample Visualization</p>
-  </div>
-</div>
-
-### Environment Characteristics
-
-Each game presents unique challenges for sequence modeling:
-
-- **Breakout**: Spatial reasoning and paddle control with sparse rewards
-- **Pong**: Real-time reaction and trajectory prediction with continuous action space
-- **Q*bert**: Strategic planning and path optimization with complex state space
-- **Seaquest**: Multi-objective resource management with long-term dependencies
-
-### Key-to-Door Task
+### Specialized Environment Testing
 
 Specialized environment testing long-term credit assignment:
 - **Objective**: Pick up key early, navigate to door later
