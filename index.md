@@ -106,14 +106,14 @@ title: ""
     <div class="creators">
       <div class="creator-card">
         <div class="avatar"
-             style="background-image:url('{{ '/assets/img/your-photo.jpg' | relative_url }}')"
-             title="Your Name" aria-label="Your Name"></div>
-        <div class="creator-name">Your Name</div>
+             style="background-image:url('{{ '/assets/img/iman.jpg' | relative_url }}')"
+             title="Iman Ahmadi" aria-label="Iman Ahmadi"></div>
+        <div class="creator-name">Iman Ahmadi</div>
         <p class="creator-contact">
           <svg class="icon-mail" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M3 7.5l9 6 9-6M4.5 6h15a1.5 1.5 0 0 1 1.5 1.5v9A1.5 1.5 0 0 1 19.5 18h-15A1.5 1.5 0 0 1 3 16.5v-9A1.5 1.5 0 0 1 4.5 6z"/>
           </svg>
-          <a href="mailto:your.email@example.com">your.email@example.com</a>
+          <a href="mailto:iman1234ahmadi@gmail.com">iman1234ahmadi@gmail.com</a>
         </p>
       </div>
 
