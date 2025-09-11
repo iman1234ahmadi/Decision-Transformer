@@ -287,40 +287,40 @@ Each game presents unique decision-making challenges:
 
 ## ✦ References ✦ <a name="references"></a>
 
-<div style="background: #f8f9fa; padding: 2rem; border-radius: 12px; border-left: 4px solid #2c3e50; margin: 2rem 0;">
+<div style="background: linear-gradient(135deg, #1a1f2e 0%, #2d3748 100%); padding: 2rem; border-radius: 12px; border-left: 4px solid #3b82f6; margin: 2rem 0; box-shadow: 0 8px 32px rgba(0,0,0,0.3);">
 
 <div style="display: grid; gap: 1.5rem; font-size: 0.95em; line-height: 1.6;">
 
-<div style="padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-<strong>[1]</strong> Sutton, Richard S., and Andrew G. Barto. <em>Reinforcement learning: An introduction</em>. MIT press, 2018.
+<div style="padding: 1rem; background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid #4a5568; color: #e2e8f0;">
+<strong style="color: #3b82f6;">[1]</strong> Sutton, Richard S., and Andrew G. Barto. <em style="color: #a0aec0;">Reinforcement learning: An introduction</em>. MIT press, 2018.
 </div>
 
-<div style="padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-<strong>[2]</strong> Auer, Peter, et al. "Finite-time analysis of the multiarmed bandit problem." <em>Machine learning</em> 47.2-3 (2002): 235-256.
+<div style="padding: 1rem; background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid #4a5568; color: #e2e8f0;">
+<strong style="color: #3b82f6;">[2]</strong> Auer, Peter, et al. "Finite-time analysis of the multiarmed bandit problem." <em style="color: #a0aec0;">Machine learning</em> 47.2-3 (2002): 235-256.
 </div>
 
-<div style="padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-<strong>[3]</strong> Schaul, Tom, et al. "Prioritized experience replay." <em>arXiv preprint arXiv:1511.05952</em> (2015).
+<div style="padding: 1rem; background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid #4a5568; color: #e2e8f0;">
+<strong style="color: #3b82f6;">[3]</strong> Schaul, Tom, et al. "Prioritized experience replay." <em style="color: #a0aec0;">arXiv preprint arXiv:1511.05952</em> (2015).
 </div>
 
-<div style="padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-<strong>[4]</strong> Haarnoja, Tuomas, et al. "Soft actor-critic: Off-policy maximum entropy deep reinforcement learning with a stochastic actor." <em>International conference on machine learning</em>. PMLR, 2018.
+<div style="padding: 1rem; background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid #4a5568; color: #e2e8f0;">
+<strong style="color: #3b82f6;">[4]</strong> Haarnoja, Tuomas, et al. "Soft actor-critic: Off-policy maximum entropy deep reinforcement learning with a stochastic actor." <em style="color: #a0aec0;">International conference on machine learning</em>. PMLR, 2018.
 </div>
 
-<div style="padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-<strong>[5]</strong> Mnih, Volodymyr, et al. "Human-level control through deep reinforcement learning." <em>Nature</em> 518.7540 (2015): 529-533.
+<div style="padding: 1rem; background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid #4a5568; color: #e2e8f0;">
+<strong style="color: #3b82f6;">[5]</strong> Mnih, Volodymyr, et al. "Human-level control through deep reinforcement learning." <em style="color: #a0aec0;">Nature</em> 518.7540 (2015): 529-533.
 </div>
 
-<div style="padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-<strong>[6]</strong> Taylor, Matthew E., and Peter Stone. "Transfer learning for reinforcement learning domains: A survey." <em>Journal of Machine Learning Research</em> 10.Jul (2009): 1633-1685.
+<div style="padding: 1rem; background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid #4a5568; color: #e2e8f0;">
+<strong style="color: #3b82f6;">[6]</strong> Taylor, Matthew E., and Peter Stone. "Transfer learning for reinforcement learning domains: A survey." <em style="color: #a0aec0;">Journal of Machine Learning Research</em> 10.Jul (2009): 1633-1685.
 </div>
 
-<div style="padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-<strong>[7]</strong> Roijers, Diederik M., et al. "A survey of multi-objective sequential decision-making." <em>Journal of Artificial Intelligence Research</em> 48 (2013): 67-113.
+<div style="padding: 1rem; background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid #4a5568; color: #e2e8f0;">
+<strong style="color: #3b82f6;">[7]</strong> Roijers, Diederik M., et al. "A survey of multi-objective sequential decision-making." <em style="color: #a0aec0;">Journal of Artificial Intelligence Research</em> 48 (2013): 67-113.
 </div>
 
-<div style="padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-<strong>[8]</strong> Bellemare, Marc G., et al. "The arcade learning environment: An evaluation platform for general agents." <em>Journal of Artificial Intelligence Research</em> 47 (2013): 253-279.
+<div style="padding: 1rem; background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid #4a5568; color: #e2e8f0;">
+<strong style="color: #3b82f6;">[8]</strong> Bellemare, Marc G., et al. "The arcade learning environment: An evaluation platform for general agents." <em style="color: #a0aec0;">Journal of Artificial Intelligence Research</em> 47 (2013): 253-279.
 </div>
 
 </div>
@@ -328,13 +328,14 @@ Each game presents unique decision-making challenges:
 
 ---
 
-<div style="text-align: center; margin-top: 3rem; padding: 2rem; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); border-radius: 10px;">
-  <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Project Logo" style="height: 60px; margin-bottom: 1rem;">
-  <p style="margin: 0; font-size: 0.9em; color: #666;">
-    <strong>Decision Making in Reinforcement Learning</strong><br>
-    Robust frameworks for intelligent decision making under uncertainty
+<div style="text-align: center; margin-top: 3rem; padding: 2rem; background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%); border-radius: 10px; border: 1px solid #4a5568; box-shadow: 0 8px 32px rgba(0,0,0,0.3);">
+  <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Project Logo" style="height: 60px; margin-bottom: 1rem; filter: brightness(1.1);">
+  <p style="margin: 0; font-size: 0.9em; color: #e2e8f0;">
+    <strong style="color: #3b82f6;">Decision Transformer: Reinforcement
+Learning via Sequence Modeling</strong><br>
+    <span style="color: #a0aec0;">Robust frameworks for intelligent decision making under uncertainty</span>
   </p>
-  <p style="margin: 0.5rem 0 0 0; font-size: 0.8em; color: #888;">
+  <p style="margin: 0.5rem 0 0 0; font-size: 0.8em; color: #718096;">
     For more information, visit our project repository or contact the authors
   </p>
 </div>
